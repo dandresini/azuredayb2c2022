@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azuredayb2c", "azuredayb2c.csproj", "{DCAF5D11-AA63-49EA-8617-8D034169F71E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "azuredayb2c", "azuredayb2c.csproj", "{DCAF5D11-AA63-49EA-8617-8D034169F71E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ms-identity-javascript-react-spa(1)", "..\ms-identity-javascript-react-spa\", "{4914992B-05AF-4586-B142-DED0C2240B09}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56327"
+		Debug.AspNetCompiler.PhysicalPath = "..\ms-identity-javascript-react-spa\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56327\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56327"
+		Release.AspNetCompiler.PhysicalPath = "..\ms-identity-javascript-react-spa\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56327\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56327"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +35,10 @@ Global
 		{DCAF5D11-AA63-49EA-8617-8D034169F71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCAF5D11-AA63-49EA-8617-8D034169F71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCAF5D11-AA63-49EA-8617-8D034169F71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4914992B-05AF-4586-B142-DED0C2240B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4914992B-05AF-4586-B142-DED0C2240B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4914992B-05AF-4586-B142-DED0C2240B09}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4914992B-05AF-4586-B142-DED0C2240B09}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
