@@ -16,7 +16,7 @@ namespace azuredayfunctiontest
         [FunctionName("InformazioniUtente2")]
         public static  Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            [FromUser(AutorizedScopes = "funtion.read")] MyUserModel UserInformation,
+            [FromUser(AutorizedScopes = "function.read")] MyUserModel UserInformation,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
