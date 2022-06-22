@@ -10,7 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace azuredayb2c.custombinding
+namespace azuredayfunctiontest.custombinding
 {
     public class FromUserBindingProvider : IBindingProvider
     {

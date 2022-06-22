@@ -32,7 +32,7 @@ export const b2cPolicies = {
  */
 export const msalConfig = {
     auth: {
-        clientId: "1ac83858-77dd-489a-ac6e-9e8e445c0f23", // This is the ONLY mandatory field that you need to supply.
+        clientId: "93165ad5-0796-47bb-8ea5-a894a9d4a3d4", // This is the ONLY mandatory field that you need to supply.
         authority: b2cPolicies.authorities.signUpSignIn.authority, // Choose SUSI as your default authority.
         knownAuthorities: [b2cPolicies.authorityDomain], // Mark your B2C tenant's domain as trusted.
         redirectUri: "/", // You must register this URI on Azure Portal/App Registration. Defaults to window.location.origin
@@ -70,8 +70,8 @@ export const msalConfig = {
 
 export const protectedResources = {
     azureFunction: {
-        endpoint: "https://azuredayita.azurewebsites.net/api/InformazioniUtente?name=Damiano&code=Ws9tYZ_3NRxLxvbIcNzZeQzuck-bgGR9wlB3Vc7TlS62AzFuVhl76A==",
-        scopes: ["https://azuredayIta.onmicrosoft.com/80d13b2f-1b88-4af6-a572-e29fd5a58ef9/function.read"], // e.g. api://xxxxxx/access_as_user
+        endpoint: "https://azureday.azurewebsites.net/api/InformazioniUtente2?code=AlsAAX9Hi3OuzHBMDVXn7P-6aPfFmLvUwB96ODV2HmTAAzFuxd5mqA==",
+        scopes: ["https://azuredayIta.onmicrosoft.com/49ca8e8d-e50b-43af-a6fa-2eae09b8e9be/funtion.read"], // e.g. api://xxxxxx/access_as_user
     },
 }
 

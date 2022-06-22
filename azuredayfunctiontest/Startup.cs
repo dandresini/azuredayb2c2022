@@ -1,11 +1,11 @@
-﻿using azuredayb2c;
-using azuredayb2c.custombinding;
+﻿using azuredayfunctiontest;
+using azuredayfunctiontest.custombinding;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly: WebJobsStartup(typeof(Startup))]
-namespace azuredayb2c
+namespace azuredayfunctiontest
 {
  
     public class Startup : IWebJobsStartup

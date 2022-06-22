@@ -13,6 +13,7 @@ export const ProfileData = (props) => {
             <p><strong>Cognome: </strong> {props.graphData.surname}</p>
             <p><strong>Città: </strong> {props.graphData.city}</p>
             <p><strong>Email: </strong> {props.graphData.email}</p>
+            <p><strong>Result:</strong>{typeof (props.graphData) == "object" ? props.graphData.name : props.graphData }</p>
         </div>
     );
 };

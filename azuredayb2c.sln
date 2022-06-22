@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "azuredayb2c", "azuredayb2c.csproj", "{DCAF5D11-AA63-49EA-8617-8D034169F71E}"
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ms-identity-javascript-react-spa(1)", "..\ms-identity-javascript-react-spa\", "{4914992B-05AF-4586-B142-DED0C2240B09}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ms-identity-javascript-react-spa", "ms-identity-javascript-react-spa\", "{4914992B-05AF-4586-B142-DED0C2240B09}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_56327"
@@ -23,6 +21,14 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ms-identity-javascript-reac
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "56327"
+		SlnRelativePath = "..\ms-identity-javascript-react-spa\"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "azuredayfunctiontest", "azuredayfunctiontest\azuredayfunctiontest.csproj", "{A3BA5C56-42A3-4808-AAF3-41A24EA304C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D421BE4F-C5F4-43B4-B844-D31C2C6EDB47}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
@@ -31,14 +37,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DCAF5D11-AA63-49EA-8617-8D034169F71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCAF5D11-AA63-49EA-8617-8D034169F71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCAF5D11-AA63-49EA-8617-8D034169F71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCAF5D11-AA63-49EA-8617-8D034169F71E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4914992B-05AF-4586-B142-DED0C2240B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4914992B-05AF-4586-B142-DED0C2240B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4914992B-05AF-4586-B142-DED0C2240B09}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{4914992B-05AF-4586-B142-DED0C2240B09}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A3BA5C56-42A3-4808-AAF3-41A24EA304C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3BA5C56-42A3-4808-AAF3-41A24EA304C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3BA5C56-42A3-4808-AAF3-41A24EA304C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3BA5C56-42A3-4808-AAF3-41A24EA304C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

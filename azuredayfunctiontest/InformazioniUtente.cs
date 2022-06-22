@@ -1,10 +1,18 @@
-# Azure 
-Proteggere una Function con Azure Active Directory B2C
-Scaricare il repository microsoft
-[msal react project](https://github.com/Azure-Samples/ms-identity-javascript-react-spa)
+using System;
+using System.IO;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using System.Linq;
 
-Utilizzare il seguente codice per testare la funzione
-```
+namespace azuredayfunctiontest
+{
+    public static class InformazioniUtente
+    {
         [FunctionName("InformazioniUtente")]
         public static Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
@@ -30,4 +38,5 @@ Utilizzare il seguente codice per testare la funzione
             log.LogInformation("Utente non Autenticato");
             return Task.FromResult<IActionResult>(new ObjectResult("Forbidden") { StatusCode = 403 });
         }
-```
+    }
+}

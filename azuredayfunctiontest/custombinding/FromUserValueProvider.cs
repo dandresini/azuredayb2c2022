@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace azuredayb2c.custombinding
+namespace azuredayfunctiontest.custombinding
 {
     public class FromUserValueProvider : IValueProvider
     {
@@ -23,9 +23,9 @@ namespace azuredayb2c.custombinding
 
         public Task<object> GetValueAsync()
         {
-            
+            logger.LogInformation($"Inizio procedura di controllo");
             bool isAuth = _HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated;
-            
+            logger.LogInformation($"Utente autorizzato {isAuth}");
             if (isAuth)
             {
                 var claims = _HttpContextAccessor.HttpContext.User.Claims;
