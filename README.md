@@ -14,7 +14,7 @@ using Microsoft.Extensions.Logging;
 using System.Linq;
 
 
-[FunctionName("Informazioni")]
+[FunctionName("UserInformationSimple")]
 public static Task<IActionResult> Run(
     HttpRequest req,
     ILogger log)

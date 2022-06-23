@@ -8,9 +8,9 @@ using System.Linq;
 
 namespace azuredayfunctiontest
 {
-    public static class InformazioniUtente
+    public static class UserInformationNoScopeCheck
     {
-        [FunctionName("InformazioniUtente")]
+        [FunctionName("UserInformationNoScopeCheck")]
         public static Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)

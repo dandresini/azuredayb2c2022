@@ -11,9 +11,9 @@ using azuredayfunctiontest.custombinding;
 
 namespace azuredayfunctiontest
 {
-    public static class InformazioniUtente2
+    public static class UserInformation
     {
-        [FunctionName("InformazioniUtente2")]
+        [FunctionName("UserInformation")]
         public static  Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             [FromUser(AutorizedScopes = "function.read")] MyUserModel UserInformation,
@@ -21,14 +21,9 @@ namespace azuredayfunctiontest
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            log.LogInformation("C# HTTP trigger function processed a request.");
-
             if (UserInformation.IsAuthenticated)
-            {
-                //req.HttpContext.User.Claims
-
                 return Task.FromResult<IActionResult>(new OkObjectResult(UserInformation));
-            }
+            
 
             return Task.FromResult<IActionResult>(new ObjectResult("Forbidden") { StatusCode = 403 });
         }
